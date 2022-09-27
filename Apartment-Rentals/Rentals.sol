@@ -1,3 +1,7 @@
+// SPDX-License-Identifier: MIT 
+
+
+
 pragma solidity ^0.8.7;
 
 contract Rentals_Dapp {
@@ -54,8 +58,6 @@ contract Rentals_Dapp {
     function addRentals(
         string memory name,
         string memory city,
-        string memory lat,
-        string memory long,
         string memory apartment_Description,
         string memory imgUrl,
         uint256 maxGuests,
@@ -66,10 +68,7 @@ contract Rentals_Dapp {
         rentalInfo storage newRental = rentals[counter];
         newRental.name = name;
         newRental.city = city;
-        newRental.lat = lat;
-        newRental.long = long;
-        newRental.unoDescription = unoDescription;
-        newRental.dosDescription = dosDescription;
+        newRental.apartment_Description;
         newRental.imgUrl = imgUrl;
         newRental.maxGuests = maxGuests;
         newRental.pricePerDay = pricePerDay;
